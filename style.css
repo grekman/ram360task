@@ -2,87 +2,74 @@
   margin:0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Helvetica";
+  color: #ffffff;
 }
 
-/* Style for "Layer 0" */
 .layer0 {
-
   width: 100vw;
-  min-width: 500px;
+  min-width: 320px;
   display: inline-block;
   margin: 0 auto;
   padding-top: 22px;
   padding-bottom: 60px;
-  /*max-width: 1920px;*/
-  /*max-height: 1080px;*/
   background-image: url("./img/5-layers.png");
   background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
 
 }
 
 .upper {
-  /*max-width: 1920px;*/
-  height: 39px;
+  height: 4vh;
 }
-/* Style for "Rectangle" */
 
 .rectangle {
   float: left;
   width: 533px;
   height: 39px;
+  text-align: center;
   background-image: url("./img/rectangle-2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+
 }
 
 .rectangle p {
-
-  /*width: 431px;
-  height: 22px;*/
-  color: #ffffff;
-  font-family: "Helvetica";
   font-size: 21px;
   font-weight: 400;
   line-height: 36px;
+
   text-transform: uppercase;
 }
 
 
 .center {
   margin: 0 auto;
-  /*max-width: 1920px;*/
-  /*max-height: 667px;*/
-
 }
 
 .header{
-   margin: 20px auto 0;
-   color: #ffffff;
-   width: 372px;
-  font-family: "Helvetica";
+  margin: 2vh auto 0;
+  width: auto;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
 }
 
 .header p {
-  /* Text style for "Познайомся" */
   font-size: 24px;
 }
 
 .header span {
-  /* Text style for "AHEAD" */
   font-size: 41px;
-
 }
 
 .text1, .text2 {
-   margin: 28px auto 0;
-   color: #ffffff;
-   /*width: 664px;*/
-   font-family: "Helvetica";
-   font-weight: 500;
-   text-transform: uppercase;
-   text-align: center;
+  margin: 2vh auto 0;
+  font-size: 24px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .text1 {
@@ -93,10 +80,11 @@
   margin: 4vw auto 0;
   width: 429px;
   height: 250px;
-  /*opacity: 0.30;*/
   background-image: url("./img/17-layers.png");
-}
+  background-size: contain;
+  background-repeat: no-repeat;
 
+}
 
 .how {
   margin: 4vw auto 0;
@@ -105,8 +93,6 @@
 }
 
 .text3 {
-  color: #ffffff;
-  font-family: "Helvetica";
   font-size: 28px;
   font-weight: 500;
   line-height: 59px;
@@ -117,31 +103,31 @@
 
 }
 
-
 .arrow-right {
   background-image: url("./img/move.png");
+  background-size: contain;
+  background-repeat: no-repeat;
   width: 59px;
   height: 59px;
   float:left;
-
+  cursor: pointer;
 }
 
 .lower {
   margin-top: 5vw;
-  /*max-width: 1920px;*/
-  max-height: 10vw;
+  height: 10vw;
 
 }
 
 .lower-right {
   max-height: 134px;
-  margin-right: 5vw;
+  margin-right: 4vw;
   float:right;
 }
 
 .lower-left {
   max-height: 134px;
-  margin-left: 5vw;
+  margin-left: 4vw;
   float: left;
 }
 
@@ -149,7 +135,6 @@
   display: table;
   float:right;
 }
-
 
 .text5 {
   display:table;
@@ -160,8 +145,6 @@
 .text4 p, .text5 p{
   display: table-cell;
   height: 134px;
-  color: #ffffff;
-  font-family: "Helvetica";
   font-size: 22px;
   font-weight: 300;
   line-height: 30px;
@@ -170,27 +153,120 @@
 
 }
 
-
-
 .text4 span, .text5 span {
-  color: #ffffff;
-  font-family: "Helvetica";
   font-size: 33px;
   font-weight: 700;
   font-style: italic;
   line-height: 45px;
 }
 
-.btn-right {
+
+.btn-right, .btn-left {
   width: 94px;
   height: 134px;
   float: right;
+  cursor: pointer;
+}
+
+.btn-right {
   background-image: url("./img/3-layers-r.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+
 }
 
 .btn-left {
-  width: 94px;
-  height: 134px;
-  float: right;
   background-image: url("./img/3-layers.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width:940px){
+  .layer0 {
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+
+  .layer0 {
+    height: 100vh;
+  }
+
+  .rectangle {
+    width: 268px;
+    height: 30px;
+    background-size:contain;
+    background-repeat: no-repeat;
+  }
+
+  .rectangle p {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 18px;
+  }
+
+  .header {
+    margin-top: 3vh;
+  }
+
+  .header p {
+    font-size: 12px;
+  }
+
+  .header span {
+    font-size: 20px;
+  }
+
+  .text1, .text2 {
+    font-size: 12px;
+  }
+
+  .price {
+    margin: 4vw auto 0;
+    width: 215px;
+    height: 125px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .how {
+    max-width: 285px;
+    height: 30px;
+  }
+
+  .text3 {
+    font-size: 14px;
+    line-height: 30px;
+
+  }
+
+  .arrow-right {
+    width: 30px;
+    height: 30px;
+  }
+
+
+  .lower-right {
+    margin-top: 30px;
+  }
+
+  .text4 p, .text5 p{
+    height: 67px;
+    font-size: 10px;
+    line-height: 16px;
+
+  }
+
+  .text4 span, .text5 span {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 10px;
+  }
+
+  .btn-right, .btn-left {
+    width: 47px;
+    height: 67px;
+  }
+
 }
